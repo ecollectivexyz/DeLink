@@ -16,6 +16,8 @@ import { ethers } from "ethers";
 import { Link, useSearchParams } from "react-router-dom";
 import { useNavigate } from "react-router";
 import axios from "axios";
+import ButtonDashboard from "./components/atoms/ButtonDashboard";
+import SelectSocials from "./components/atoms/SelectSocials";
 
 const Title = styled.div`
   color: #163a54;
@@ -135,10 +137,12 @@ function Home() {
     <Container>
       <GradientBar />
       <WhiteBox>
-        <Title>
+        <ButtonDashboard></ButtonDashboard>
+        <SelectSocials></SelectSocials>
+        {/* <Title>
           I <b>attest</b> that we met
-        </Title>
-
+        </Title> */}
+{/* 
         <InputContainer>
           <InputBlock
             autoCorrect={"off"}
@@ -204,7 +208,7 @@ function Home() {
             : status === "connected"
             ? "Make attestation"
             : "Connect wallet"}
-        </MetButton>
+        </MetButton> */}
 
         {status === "connected" && (
           <>

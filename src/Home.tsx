@@ -18,6 +18,7 @@ import { useNavigate } from "react-router";
 import axios from "axios";
 import ButtonDashboard from "./components/atoms/ButtonDashboard";
 import SelectSocials from "./components/atoms/SelectSocials";
+import TabsMenu from "./components/molecules/TabsMenu";
 
 const Title = styled.div`
   color: #163a54;
@@ -85,7 +86,7 @@ const InputBlock = styled.input`
 const WhiteBox = styled.div`
   box-shadow: 0 4px 33px rgba(168, 198, 207, 0.15);
   background-color: #fff;
-  padding: 36px;
+  padding:  0 36px;
   max-width: 590px;
   border-radius: 10px;
   margin: 40px auto 0;
@@ -138,6 +139,8 @@ function Home() {
       <GradientBar />
       <WhiteBox>
         <ButtonDashboard></ButtonDashboard>
+        <TabsMenu></TabsMenu>
+
         <SelectSocials></SelectSocials>
         {/* <Title>
           I <b>attest</b> that we met

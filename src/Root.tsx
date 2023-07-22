@@ -28,8 +28,6 @@ type ChainConfig = {
   chain: Chain;
 };
 
-chains
-debugger;
 
 const allChains: ChainConfig[] = [
   {

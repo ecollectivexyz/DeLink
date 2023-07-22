@@ -153,8 +153,8 @@ export function Header() {
           <MainNavigation>
             <LogoContainer>
               <Logo onClick={() => navigate("/")}>
-                <LogoImage src="/logo.png" />
-                <LogoText>METIRL</LogoText>
+                {/* <LogoImage src="/logo.png" /> */}
+                <LogoText>DeLink</LogoText>
               </Logo>
             </LogoContainer>
             <Left>

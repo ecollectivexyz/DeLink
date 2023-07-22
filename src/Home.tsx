@@ -136,7 +136,7 @@ function Home() {
       <GradientBar />
       <WhiteBox>
         <Title>
-          I <b>attest</b> that I met
+          I <b>attest</b> that we met
         </Title>
 
         <InputContainer>
@@ -168,6 +168,8 @@ function Home() {
                 const recipient = ensResolvedAddress
                   ? ensResolvedAddress
                   : address;
+
+                  // eas.m
 
                 const tx = await eas.attest({
                   data: {

@@ -33,23 +33,22 @@ invariant(CHAINID, "No chain ID env found");
 
 export const EAS_CHAIN_CONFIGS: EASChainConfig[] = [
   {
-    chainId: 11155111,
-    chainName: "sepolia",
-    subdomain: "sepolia.",
+    chainId: 420,
+    chainName: "optimism-goerli",
+    subdomain: "goerli-optimism.",
     version: "0.26",
-    contractAddress: "0xC2679fBD37d54388Ce493F1DB75320D236e1815e",
-    schemaRegistryAddress: "0x0a7E2Ff54e76B8E6659aedc9103FB21c038050D0",
-    etherscanURL: "https://sepolia.etherscan.io",
+    contractAddress: "0x1a5650d0ecbca349dd84bafa85790e3e6955eb84",
+    schemaRegistryAddress: "0x7b24c7f8af365b4e308b6acb0a7dfc85d034cb3f",
+    etherscanURL: "https://goerli-optimism.etherscan.io",
     contractStartBlock: 2958570,
-    rpcProvider: `https://sepolia.infura.io/v3/`,
+    rpcProvider: `https://goerli-optimism.infura.io/v3/`,
   },
 ];
 
 export const activeChainConfig = EAS_CHAIN_CONFIGS.find(
   (config) => config.chainId === CHAINID
 );
-
-export const baseURL = `https://${activeChainConfig!.subdomain}easscan.org`;
+export const baseURL = `https://optimism-goerli.easscan.org/`;
 
 invariant(activeChainConfig, "No chain config found for chain ID");
 export const EASContractAddress = activeChainConfig.contractAddress;

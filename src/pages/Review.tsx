@@ -20,6 +20,8 @@ import invariant from "tiny-invariant";
 import { ethers } from "ethers";
 import { Link, useSearchParams } from "react-router-dom";
 import axios from "axios";
+import Box from "@mui/material/Box";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
 const Title = styled.div`
@@ -42,6 +44,38 @@ const MetButton = styled.div`
   cursor: pointer;
 `;
 
+
+
+const Container = styled.div`
+  @media (max-width: 700px) {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 80px);  }
+`;
+
+
+
+const WhiteBox = styled.div`
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+  box-shadow: 0 4px 33px rgba(168, 198, 207, 0.15);
+  background-color: #fff;
+  padding:  0 36px;
+  max-width: 590px;
+  border-radius: 10px;
+  margin: 40px auto 0;
+  text-align: center;
+  box-sizing: border-box;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+`;
 
 const InputContainer = styled.div`
   position: relative;
@@ -112,13 +146,63 @@ function Review(){
     }, [address]);
 
     return (
-        <>
+      <Container>
+        <WhiteBox>
+           <div>
             <Button variant="contained" color="primary" startIcon={<ArrowBackIcon/> }   onClick={() => {
-                navigate("/")
-            }}  >
-                    Back
-            </Button> 
-            <p>Review</p>
+                  navigate("/")
+              }}  >
+                      Back
+              </Button> 
+              <p> You will create 6 new attstations </p>
+              <div style={{   display: "flex",
+                              flexDirection: "row"
+                          }}>
+                
+                <Box
+                  sx={{
+                    width: 100,
+                    height: 100,
+                    margin: "5px",
+                    backgroundColor: 'primary.dark',
+                    '&:hover': {
+                      backgroundColor: 'primary.main',
+                      opacity: [0.9, 0.8, 0.7],
+                    },
+                  }}
+                />
+                                <Box
+                  sx={{
+                    width: 100,
+                    height: 100,
+                    margin: "5px",
+                    backgroundColor: 'primary.dark',
+                    '&:hover': {
+                      backgroundColor: 'primary.main',
+                      opacity: [0.9, 0.8, 0.7],
+                    },
+                  }}
+                />
+                                <Box
+                  sx={{
+                    width: 100,
+                    height: 100,
+                    margin: "5px",
+                    backgroundColor: 'primary.dark',
+                    '&:hover': {
+                      backgroundColor: 'primary.main',
+                      opacity: [0.9, 0.8, 0.7],
+                    },
+                  }}
+                />
+                
+              </div>
+
+           </div>
+           <p> For this person </p>
+
+           <KeyboardArrowDownIcon  style={{    alignSelf: "center"}}/>
+
 
             
         <InputContainer>
@@ -186,8 +270,9 @@ function Review(){
             : status === "connected"
             ? "Sign"
             : "Connect wallet"}
-        </MetButton> */
-        </>
+        </MetButton>
+        </WhiteBox>
+        </Container>
     );
 };
 

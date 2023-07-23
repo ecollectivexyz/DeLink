@@ -7,7 +7,6 @@ import Select from '@mui/material/Select';
 
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ListItemIcon from '@mui/material/ListItemIcon';
 
 
@@ -39,7 +38,7 @@ export default function SelectSocial() {
 
             <MenuItem value={10}>
                 <ListItemIcon>
-                    <FontAwesomeIcon icon="fa-brands fa-discord" />
+                  <GitHubIcon />
                 </ListItemIcon>
                 DISCORD
             </MenuItem>

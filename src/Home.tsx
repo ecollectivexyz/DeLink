@@ -19,6 +19,7 @@ import axios from "axios";
 import ButtonDashboard from "./components/atoms/ButtonDashboard";
 import SelectSocials from "./components/atoms/SelectSocials";
 import TabsMenu from "./components/molecules/TabsMenu";
+import ButtonAttest from "./components/atoms/ButtonAttest";
 
 const Title = styled.div`
   color: #163a54;
@@ -143,6 +144,8 @@ function Home() {
 
         <Outlet />
 
+        <ButtonAttest></ButtonAttest>
+
         {/* <Title>
           I <b>attest</b> that we met
         </Title> */}
@@ -217,7 +220,7 @@ function Home() {
         {status === "connected" && (
           <>
             <SubText to={"/qr"}>Show my QR code</SubText>
-            <SubText to={"/connections"}>Connections</SubText>
+            {/* <SubText to={"/connections"}>Connections</SubText> */}
           </>
         )}
       </WhiteBox>

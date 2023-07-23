@@ -7,6 +7,8 @@ import Connections from "./Connections";
 import Skills from "./pages/Skills";
 import Relations from "./pages/Relations";
 import Identity from "./pages/Identity";
+import Dashboard from "./pages/Dashboard";
+import Review from "./pages/Review";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "/qr",
         element: <Qr />,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "/review",
+        element: <Review />,
       },
       {
         path: "/connections",

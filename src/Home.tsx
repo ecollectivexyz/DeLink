@@ -21,30 +21,12 @@ import SelectSocials from "./components/atoms/SelectSocials";
 import TabsMenu from "./components/molecules/TabsMenu";
 import ButtonAttest from "./components/atoms/ButtonAttest";
 
-const Title = styled.div`
-  color: #163a54;
-  font-size: 22px;
-  font-family: Montserrat, sans-serif;
-`;
+
 
 const Container = styled.div`
   @media (max-width: 700px) {
     width: 100%;
   }
-`;
-
-const MetButton = styled.div`
-  border-radius: 10px;
-  border: 1px solid #cfb9ff;
-  background: #333342;
-  width: 100%;
-  padding: 20px 10px;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 18px;
-  font-family: Montserrat, sans-serif;
-  font-weight: 700;
-  cursor: pointer;
 `;
 
 const SubText = styled(Link)`
@@ -53,35 +35,6 @@ const SubText = styled(Link)`
   text-decoration: underline;
   color: #ababab;
   margin-top: 20px;
-`;
-
-const InputContainer = styled.div`
-  position: relative;
-  height: 90px;
-`;
-
-const EnsLogo = styled.img`
-  position: absolute;
-  left: 14px;
-  top: 28px;
-  width: 30px;
-`;
-
-const InputBlock = styled.input`
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  border: 1px solid rgba(19, 30, 38, 0.33);
-  background: rgba(255, 255, 255, 0.5);
-  color: #131e26;
-  font-size: 18px;
-  font-family: Chalkboard, sans-serif;
-  padding: 20px 10px;
-  text-align: center;
-  margin-top: 12px;
-  box-sizing: border-box;
-  width: 100%;
 `;
 
 const WhiteBox = styled.div`
@@ -98,6 +51,9 @@ const WhiteBox = styled.div`
     width: 100%;
   }
 `;
+
+
+
 
 const eas = new EAS(EASContractAddress);
 

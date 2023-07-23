@@ -14,7 +14,7 @@ import { EAS, SchemaEncoder } from "@ethereum-attestation-service/eas-sdk";
 import invariant from "tiny-invariant";
 import { ethers } from "ethers";
 import { Link, useSearchParams } from "react-router-dom";
-import { useNavigate } from "react-router";
+import { Outlet, useNavigate } from "react-router";
 import axios from "axios";
 import ButtonDashboard from "./components/atoms/ButtonDashboard";
 import SelectSocials from "./components/atoms/SelectSocials";
@@ -141,7 +141,8 @@ function Home() {
         <ButtonDashboard></ButtonDashboard>
         <TabsMenu></TabsMenu>
 
-        <SelectSocials></SelectSocials>
+        <Outlet />
+
         {/* <Title>
           I <b>attest</b> that we met
         </Title> */}

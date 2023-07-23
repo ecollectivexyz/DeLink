@@ -1,3 +1,5 @@
+![](https://cdn.discordapp.com/attachments/1131186088799653938/1132583574726512742/background.jpg)
+
 # DeLink
 
 DeLink is an attestation Dapp based on networking fundamentals to help people succeed in finding a connection for a role, contribution, or relationship in a social graph.

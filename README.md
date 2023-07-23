@@ -6,6 +6,8 @@ DeLink data modeling abstraction is flexible, its relational design uses a bytes
 
 This project documentation can be found at: [https://app.charmverse.io/builders-ecollective/page-45042824027929296](https://app.charmverse.io/builders-ecollective/page-45042824027929296)
 
+The Dapp is accessible here : [https://de-link.vercel.app](https://de-link.vercel.app/)
+
 
 ## Available Scripts
 

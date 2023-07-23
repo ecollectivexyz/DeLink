@@ -1,4 +1,4 @@
-![](https://cdn.discordapp.com/attachments/1131186088799653938/1132583574726512742/background.jpg)
+![](https://cdn.discordapp.com/attachments/1131186088799653938/1132585705890136194/background.jpg)
 
 # DeLink
 

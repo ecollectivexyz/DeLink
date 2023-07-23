@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# DeLink
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DeLink is an attestation Dapp based on networking fundamentals to help people succeed in finding a connection for a role, contribution, or relationship in a social graph.
+
+DeLink data modeling abstraction is flexible, its relational design uses a bytes32 array to enable a user to connect an infinite number of attestation, which connects the data to numerous other schemas and makes the system versatile.
+
+This project documentation can be found at: [[Create React App](https://app.charmverse.io/builders-ecollective/page-45042824027929296)](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
@@ -38,9 +43,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

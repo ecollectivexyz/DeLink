@@ -4,7 +4,7 @@ DeLink is an attestation Dapp based on networking fundamentals to help people su
 
 DeLink data modeling abstraction is flexible, its relational design uses a bytes32 array to enable a user to connect an infinite number of attestation, which connects the data to numerous other schemas and makes the system versatile.
 
-This project documentation can be found at: [https://app.charmverse.io/builders-ecollective/page-45042824027929296](https://app.charmverse.io/builders-ecollective/page-45042824027929296).
+This project documentation can be found at: [https://app.charmverse.io/builders-ecollective/page-45042824027929296](https://app.charmverse.io/builders-ecollective/page-45042824027929296)
 
 
 ## Available Scripts

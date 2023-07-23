@@ -26,7 +26,11 @@ import ButtonAttest from "./components/atoms/ButtonAttest";
 const Container = styled.div`
   @media (max-width: 700px) {
     width: 100%;
-  }
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 80px);  }
 `;
 
 const SubText = styled(Link)`
@@ -38,6 +42,10 @@ const SubText = styled(Link)`
 `;
 
 const WhiteBox = styled.div`
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
   box-shadow: 0 4px 33px rgba(168, 198, 207, 0.15);
   background-color: #fff;
   padding:  0 36px;
@@ -95,90 +103,27 @@ function Home() {
     <Container>
       <GradientBar />
       <WhiteBox>
-        <ButtonDashboard></ButtonDashboard>
-        <TabsMenu></TabsMenu>
+        <div>
+          <ButtonDashboard></ButtonDashboard>
+          <TabsMenu></TabsMenu>
+        </div>
+      
 
         <Outlet />
 
         <ButtonAttest></ButtonAttest>
 
-        {/* <Title>
-          I <b>attest</b> that we met
-        </Title> */}
+    
 {/* 
-        <InputContainer>
-          <InputBlock
-            autoCorrect={"off"}
-            autoComplete={"off"}
-            autoCapitalize={"off"}
-            placeholder={"Address/ENS"}
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-          />
-          {ensResolvedAddress && <EnsLogo src={"/ens-logo.png"} />}
-        </InputContainer>
-        <MetButton
-          onClick={async () => {
-            if (status !== "connected") {
-              modal.setOpen(true);
-            } else {
-              setAttesting(true);
-              try {
-                const schemaEncoder = new SchemaEncoder("bool metIRL");
-                const encoded = schemaEncoder.encodeData([
-                  { name: "metIRL", type: "bool", value: true },
-                ]);
-
-                invariant(signer, "signer must be defined");
-                eas.connect(signer);
-
-                const recipient = ensResolvedAddress
-                  ? ensResolvedAddress
-                  : address;
-
-                  // eas.m
-
-                const tx = await eas.attest({
-                  data: {
-                    recipient: recipient,
-                    data: encoded,
-                    refUID: ethers.constants.HashZero,
-                    revocable: true,
-                    expirationTime: 0,
-                  },
-                  schema: CUSTOM_SCHEMAS.MET_IRL_SCHEMA,
-                });
-
-                const uid = await tx.wait();
-
-                const attestation = await getAttestation(uid);
-
-                // Update ENS names
-                await Promise.all([
-                  axios.get(`${baseURL}/api/getENS/${address}`),
-                  axios.get(`${baseURL}/api/getENS/${recipient}`),
-                ]);
-
-                navigate(`/connections`);
-              } catch (e) {}
-
-              setAttesting(false);
-            }
-          }}
-        >
-          {attesting
-            ? "Attesting..."
-            : status === "connected"
-            ? "Make attestation"
-            : "Connect wallet"}
-        </MetButton> */}
-
         {status === "connected" && (
           <>
             <SubText to={"/qr"}>Show my QR code</SubText>
-            {/* <SubText to={"/connections"}>Connections</SubText> */}
           </>
-        )}
+        )
+        }
+ */}
+
+
       </WhiteBox>
     </Container>
   );

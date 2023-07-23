@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import Button from '@mui/material/Button';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import StarIcon from '@mui/icons-material/Star';
+import LanIcon from '@mui/icons-material/Lan';
+
 import { useNavigate } from 'react-router';
 
 import styled from "styled-components";
@@ -159,42 +163,52 @@ function Review(){
                               flexDirection: "row"
                           }}>
                 
+
+
+
                 <Box
                   sx={{
                     width: 100,
                     height: 100,
                     margin: "5px",
-                    backgroundColor: 'primary.dark',
-                    '&:hover': {
-                      backgroundColor: 'primary.main',
-                      opacity: [0.9, 0.8, 0.7],
-                    },
+                    padding: "5px",
+                    border : "1px solid black"
                   }}
-                />
-                                <Box
+                >
+                  <TwitterIcon />
+                  <p>Identity</p>
+                  <p>2</p>
+                </Box>
+
+                <Box
                   sx={{
                     width: 100,
                     height: 100,
                     margin: "5px",
-                    backgroundColor: 'primary.dark',
-                    '&:hover': {
-                      backgroundColor: 'primary.main',
-                      opacity: [0.9, 0.8, 0.7],
-                    },
+                    padding: "5px",
+                    border : "1px solid black"
                   }}
-                />
-                                <Box
+                >
+                  <StarIcon />
+                  <p>Skills</p>
+                  <p>2</p>
+                </Box>
+                
+                <Box
                   sx={{
                     width: 100,
                     height: 100,
                     margin: "5px",
-                    backgroundColor: 'primary.dark',
-                    '&:hover': {
-                      backgroundColor: 'primary.main',
-                      opacity: [0.9, 0.8, 0.7],
-                    },
+                    padding: "5px",
+                    border : "1px solid black"
                   }}
-                />
+                >
+                  <LanIcon />
+                  <p>Relations</p>
+                  <p>2</p>
+                </Box>
+
+                                
                 
               </div>
 

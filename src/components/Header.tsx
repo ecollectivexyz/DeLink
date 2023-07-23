@@ -48,7 +48,7 @@ const QR = styled(FaQrcode)`
 `;
 
 const LogoImage = styled.img`
-  width: 40px;
+  width: 115px;
   margin-right: 4px;
 `;
 
@@ -153,8 +153,8 @@ export function Header() {
           <MainNavigation>
             <LogoContainer>
               <Logo onClick={() => navigate("/")}>
-                {/* <LogoImage src="/logo.png" /> */}
-                <LogoText>DeLink</LogoText>
+                <LogoImage src="https://cdn.discordapp.com/attachments/1131186088799653938/1132487816052486245/logo_dApp.png" />
+                {/* <LogoText>DeLink</LogoText> */}
               </Logo>
             </LogoContainer>
             <Left>

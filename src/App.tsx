@@ -20,6 +20,10 @@ const router = createBrowserRouter([
         element: <Home />,
         children :[
           {
+            path: "",
+            element : <Identity />
+          },
+          {
             path: "skills",
             element : <Skills />
           },
